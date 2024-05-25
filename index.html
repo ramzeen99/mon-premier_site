@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        header{
+            margin-top: 75px;
+        }
+        header h1{
+            color: rgb(6, 92, 85);
+            margin-top: 1cm;
+        }
+        #crayon{
+            width: 200px;
+            float: right;
+            margin-top: -149px;
+        }
+        #h6{
+            margin-right: 10%;
+            margin-top: -18px;
+
+        }
+        
+        nav ul li a img{
+            width: 35px;
+             float: left;
+             margin-left: -25px;
+             position: relative;
+             top: 10px;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            padding-right: 25px;  
+            letter-spacing: 0.5px;
+        }
+        nav ul {
+            background-color: black;
+            height: 55px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        nav ul .nav:hover{
+          background-color: rgb(233, 125, 25);
+          transition: 0.5s ease-in;
+          border-radius: 5px;
+          border: 19px solid rgb(233, 125, 25);
+        }
+
+        #h1{
+            background-color: rgb(233, 125, 25);
+            height: 10px;
+            margin-bottom: 15px;
+            margin-top: -20px;
+        }
+        #h8{
+            background-color: rgb(233, 125, 25);
+            height: 10px;
+            position: relative;
+            bottom: -17px;
+            
+        }
+        #h7{
+            height: 2px;
+            background-color: rgb(233, 125, 25);
+            float: right;
+            width: 420px;
+            margin-top: -6.5%;
+            margin-right: 7%;
+*       }
+        #h2{
+            margin-top: 25px;
+        }
+        #h3{
+            margin-top: 55px;
+        }
+        #title1{
+          margin-top: -5px;
+        }
+        #title2{
+            float: right;      
+            margin-top: -55px; 
+            margin-right: 30%;
+         }
+         section{
+            border: 5px solid black;
+            margin-right: 40%;
+            padding: 2px;
+         }
+         article{
+            border: 5px solid rgb(235, 198, 80);
+            margin-top: -25%;
+            margin-bottom: 25px;
+            margin-right: 10px;
+         }
+         #para_cacher{
+            visibility: hidden;
+         }
+         aside{
+            float: right;
+            width: 400px;
+            padding: 10px;
+            margin-top: -55%;
+            margin-right: 7%;
+            border: 1px solid rgb(179, 177, 177);
+         }
+         strong{
+            cursor: pointer;
+         }
+         footer{
+              margin-top: 5%;
+         }
+         footer ul li {
+            display: inline-block;
+            padding-right: 115px;  
+           
+
+        }
+        footer ul {
+            background-color: black;
+            height: 60px;
+        }
+        footer ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+         footer ul .navi:hover{
+          background-color: rgb(233, 125, 25);
+          transition: 0.5s ease-in;
+          border-radius: 5px;
+          border: 19px solid rgb(233, 125, 25);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Initiation au langage HTLM</h1>
+        <img src="c.jpg" alt="" id="crayon">
+    </header>
+    
+    <hr id="h6">
+    <div class="navbar">
+    <nav>
+        <ul>
+            <li><a href="#"><img src="domicile.png" alt="Accueil"></a></li>
+            
+            <li class="nav"><a href="">Reference</a></li>
+            <li class="nav"><a href="">E-commerce et BLog</a></li>
+            <li class="nav"><a href="">Marketing et social</a></li>
+            <li class="nav"><a href="">En direct de google</a></li>
+            <li class="nav"><a href="">Cours Video</a></li>
+            <li class="nav"><a href="">lien vers ressource youtube </a></li>
+            <li class="nav"><a href="">Contact</a></li>
+        
+        </ul>
+    </nav>
+    <hr id="h1">
+    </div>
+    <hr id="h2">
+    <div id="lien_active">
+        <!-- <p><a href="#" style="text-decoration: none;list-style-type: none; color: black;">Home</a> ></p> 
+        <script>
+            document.getElementsByClassName('nav').onclick = function(){
+               var lien_active = document.getElementById('lien-active');
+               var nav = document.getElementsByClassName('nav');
+               lien_active.innerHTML += nav
+            }
+       </script> -->
+    </div>
+    <hr id="h3">
+    <div id="body">
+        <h2 id="title1">PRESTASHOP</h2>
+        <h2 id="title2">JE SUIS.</h2>
+        <section>
+            <h3>Quel Hébergeur et Hébergement Choisir pour votre Site Internet?</h3>
+            <p>18 septembre 2014 3 commentaires </p>
+            <img src="s.jpg" alt="" style="height: 200px; float:left;">
+            <p id="para_section" >
+               Bonjour à tous. Un serveur informatique est un dispositif informatique (matériel et logiciel)  <br>qui offre des services à un ou plusieurs clients (parfois des milliers). Les services les plus courants sont :
+
+               l'accès aux informations du World Wide Web ;<br>
+               le courrier électronique ;<br>
+               le partage de périphériques (imprimantes, disque durs, etc.) ;<br>
+               le commerce électronique ;<br>
+               le stockage en base de données ; <strong>Lire la suite...</strong><br><p id="para_cacher">
+               la gestion de l'authentification et du contrôle d'accès ;<br>
+               le jeu et la mise à disposition de logiciels applicatifs.<br>
+               <script>
+                 document.querySelector('strong').onclick = function(){
+                    var cacher = document.getElementById('para_cacher');
+                    var article = document.querySelector('article')
+                    cacher.style.visibility = 'visible';
+                    article.style.visibility ='hidden'                    
+                    cacher.style.marginLeft="247px"
+                    cacher.style.marginTop ="-1%"
+                     this.style.display = 'none' ;
+                 }
+            </script>
+           En fonctionnement, un serveur répond automatiquement à des requêtes provenant <br>d'autres dispositifs informatiques (les clients), selon le principe dit client-serveur. <br> Le format des requêtes et des résultats est normalisé, se conforme à des protocoles réseaux et chaque service peut être exploité <br> par tout client qui met en œuvre le protocole propre à celui-ci.
+           
+           Les serveurs sont utilisés par les entreprises, les institutions et les opérateurs <br>de télécommunication. Ils sont courants dans les centres<br> de traitement de données et le réseau Internet. 
+        </p></p>
+        <</p>
+            <article>
+                <h3>Installer PrestaShop en Local</h3>
+                <p>22 mai 2014 Laisser un commentaire</p>
+                <img src="m.jpg" alt="" style="height: 200px; float:left; ">
+                <p>
+                    PrestaShop fut créé en 2007 au sein de l'école informatique Epitech <br> par cinq étudiants. Le projet d'origine, traduit en deux langues (français, anglais) <br>portait le nom de phpOpenStore (POS). <br> La plateforme est passée de 2 à 13 langues trois mois après son lancement. <br> Les créateurs décidèrent d'en faire un logiciel libre dès sa conception. <br>Il fut testé par plusieurs marchands ayant participé à la corédaction de son cahier des charges
+                </p>
+            </article>
+        </section>
+        <aside>
+            <img src="p.jpg" alt="" style="height: 325px; " >
+            <p style="margin-top: -2%;">
+                Le métier d'informaticien apparaît à la fin du XIXe siècle avec l’émergence de la mécanographie. Celle-ci consiste alors à traiter l'information à l'aide de systèmes électromécaniques. Les mécanographes sont ainsi employés à s'occuper de ces systèmes et ce n'est qu'au milieu du XXe siècle, avec l'arrivée du terme allemand « Informatik » créé par l'ingénieur Karl Steinbuch et repris en France par Philippe Dreyfus,que le terme d'informaticien voit le jour. Dans les années 1940, les programmeurs sont essentiellement des programmeuses,la partie jugée noble du travail et préférentiellement dévolue aux hommes étant celles des infrastructures
+            </p>
+        </aside>
+        <hr id="h7">
+
+    </div>
+    
+    <footer>
+        <hr id="h8">
+        <ul >
+            <li class="navi"><a href="">TUTORIELS POPULAIRE</a></li>
+            <li class="navi"><a href="">COMMENTAIRES RECENTES</a></li>
+            <li class="navi"><a href="">ARTICLES AU HASARD</a></li>
+            <li class="navi"><a href="">CALENDRIER DES TUTORIELS</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html> 
